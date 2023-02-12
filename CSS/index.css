@@ -1,0 +1,135 @@
+body{
+    margin:0; /*Espaciado interior */
+    padding: 0; /*Espaciado exterior */
+    background: #CAF0F8;
+}
+
+.name {
+    width: 100%; /*Ancho */
+    height: 280px;/* altura*/
+    background:#0077B6;
+        
+}
+
+.name .content{
+    width: 50%;
+    height: 50%; /*50% de los 300px definido anteriormente en el .name*/
+    position:absolute;
+    left: 20%; 
+    top: auto;
+    
+}
+.name .content .yo{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 46px;
+    margin-bottom: 0;
+}
+
+.name .content .ocupacion{
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 26px;
+    margin-top: 5;
+}
+
+.name .foto{
+    position: absolute;
+    top: 20px;
+    right: 8%;
+    width: 198px;
+    height: 198px;/*width y height iguales para crear un cuadro que luego se convierte en un circulo*/
+    border-radius: 100%; /*hace un circulo*/
+    overflow: hidden;
+  
+}
+.name .foto img{
+    width: 198px;
+    height: 240px;
+    
+}
+
+.info1{
+    width: 90%;
+    height: auto; /* auto crea una caja de tamaño segun el contenido*/
+    background-color: #00B4D8;
+    margin: 5% auto; /*Espaciado interior */
+    padding: 20px; /*Espaciado exterior */
+    border-radius: 10px;
+}
+
+.info1 .titulo{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px #90E0EF solid;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.info1 .subt{
+    color: white;
+    font-family:'Poppins', sans-serif ;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 10px; /*genera un espacio/margen, debido a que el texto se toma como una cajita*/
+}
+.info1 .cont{
+    color: #03045E;
+    font-family:'Josefin Sans', sans-serif ;
+    font-weight:normal;
+    font-size: large;
+    display: inline;
+}
+
+.info1 span {
+    display: inline-block; /*Para colocar boques en linea */
+    width: auto;
+    height: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #CAF0F8;
+    color: #03045E;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 5px;
+}
+
+.info2{
+    width: 90%;
+    height: auto; /* auto crea una caja de tamaño segun el contenido*/
+    background-color: #00B4D8;
+    margin: 5% auto; /*Espaciado interior */
+    padding: 20px; /*Espaciado exterior */
+    border-radius: 10px;
+}
+
+.info2 .titulo{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px #90E0EF solid;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.info2 .subt{
+    color: white;
+    font-family:'Poppins', sans-serif ;
+    font-weight: bolder;
+    font-size: large;
+    
+    margin-right: 10px; /*genera un espacio/margen, debido a que el texto se toma como una cajita*/
+}
+.info2 .cont{
+    color: #03045E;
+    font-family:'Josefin Sans', sans-serif ;
+    font-weight:normal;
+    font-size: large;
+  
+}
