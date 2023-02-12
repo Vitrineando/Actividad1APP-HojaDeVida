@@ -12,20 +12,21 @@ body{
     align-items:center;/*centrado vertical*/
         
 }
-.name .foto{
-    position: relative;
-    top: 20px;
-    left: 38%;
-    width: 297px;
-    height: 297px;/*width y height iguales para crear un cuadro que luego se convierte en un circulo*/
-    border-radius: 100%; /*hace un circulo*/
-    overflow: hidden;  
-}
 
 .name .foto img{
     width: 297px;
-    height: 360px;
-    
+    height: 360px; 
+      
+}
+.name .foto{
+    position: relative;
+    top: 20px;    
+    width: 297px;
+    height: 297px;/*width y height iguales para crear un cuadro que luego se convierte en un circulo*/
+    border-radius: 100%; /*hace un circulo*/
+    overflow: hidden;
+    margin: auto;  
+
 }
 
 .name .content{
@@ -95,8 +96,9 @@ body{
     display: inline-block; /*Para colocar boques en linea */
     width: auto;
     height: auto;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding: 1px;
+    margin-right:5px;
+    margin-left: 0;
     background-color: #CAF0F8;
     color: #03045E;
     font-family: 'Josefin Sans', sans-serif;
