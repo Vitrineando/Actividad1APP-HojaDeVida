@@ -6,19 +6,36 @@ body{
 
 .name {
     width: 100%; /*Ancho */
-    height: 280px;/* altura*/
-    background:#0077B6;
+    height: auto;/* altura*/
+    background:#0077B6;  /*Color del fondo*/  
+    justify-content: center; /*centrado horizontal*/
+    align-items:center;/*centrado vertical*/
         
+}
+.name .foto{
+    position: relative;
+    top: 20px;
+    left: 38%;
+    width: 297px;
+    height: 297px;/*width y height iguales para crear un cuadro que luego se convierte en un circulo*/
+    border-radius: 100%; /*hace un circulo*/
+    overflow: hidden;  
+}
+
+.name .foto img{
+    width: 297px;
+    height: 360px;
+    
 }
 
 .name .content{
     width: 50%;
     height: 50%; /*50% de los 300px definido anteriormente en el .name*/
-    position:absolute;
-    left: 20%; 
-    top: auto;
-    
+    position:relative;
+    left: 25%;
+    text-align: center;
 }
+
 .name .content .yo{
     color:white;
     font-family: 'Poppins', sans-serif;
@@ -31,26 +48,14 @@ body{
     color:white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 26px;
-    margin-top: 5;
+    margin-top: 5px;
+    margin-bottom: 1%;
+    text-align: center;
 }
 
-.name .foto{
-    position: absolute;
-    top: 20px;
-    right: 8%;
-    width: 198px;
-    height: 198px;/*width y height iguales para crear un cuadro que luego se convierte en un circulo*/
-    border-radius: 100%; /*hace un circulo*/
-    overflow: hidden;
-  
-}
-.name .foto img{
-    width: 198px;
-    height: 240px;
-    
-}
 
-.info1{
+
+.info{
     width: 90%;
     height: auto; /* auto crea una caja de tamaño segun el contenido*/
     background-color: #00B4D8;
@@ -59,7 +64,7 @@ body{
     border-radius: 10px;
 }
 
-.info1 .titulo{
+.info .titulo{
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: xx-large;
@@ -70,7 +75,7 @@ body{
     margin-bottom: 25px;
 }
 
-.info1 .subt{
+.info .subt{
     color: white;
     font-family:'Poppins', sans-serif ;
     font-weight: bolder;
@@ -78,7 +83,7 @@ body{
     display: inline;
     margin-right: 10px; /*genera un espacio/margen, debido a que el texto se toma como una cajita*/
 }
-.info1 .cont{
+.info .cont{
     color: #03045E;
     font-family:'Josefin Sans', sans-serif ;
     font-weight:normal;
@@ -86,7 +91,7 @@ body{
     display: inline;
 }
 
-.info1 span {
+.info span {
     display: inline-block; /*Para colocar boques en linea */
     width: auto;
     height: auto;
@@ -104,7 +109,7 @@ body{
     background-color: #00B4D8;
     margin: 5% auto; /*Espaciado interior */
     padding: 20px; /*Espaciado exterior */
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 
 .info2 .titulo{
@@ -122,8 +127,7 @@ body{
     color: white;
     font-family:'Poppins', sans-serif ;
     font-weight: bolder;
-    font-size: large;
-    
+    font-size: large;    
     margin-right: 10px; /*genera un espacio/margen, debido a que el texto se toma como una cajita*/
 }
 .info2 .cont{
@@ -131,5 +135,7 @@ body{
     font-family:'Josefin Sans', sans-serif ;
     font-weight:normal;
     font-size: large;
+    margin-top: 0;
+    margin-bottom: 0;
   
 }
